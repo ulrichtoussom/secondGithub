@@ -10,23 +10,33 @@
 </head>
 <body>
     <div class="contain_form">
-        <form action="" class="myform"> 
+        <form action="" id="myform"> 
             <p>
                 <label for="lastname">Votre Nom</label>
                 <input type="text" id="lastname" name="lastname">
+                <span>le nom doit contenir plus de 4 caracteres</span>
             </p>
             <p>
                 <label for="firstname">votre prenom </label>
                 <input type="text" id="firstname" name="firstname">
+                <span> le prenom doit faire plus de quatre lettre</span>
                 
             </p>
 
             <p>
                 <label for="password">mot de passe</label>
                 <input type="password" id="password" name="password">
+                <span>mot de passe doit contenir plus de six caracteres</span>
             </p>
+            <p>
+                <label for=""></label>
+                <input type="submit" value="envoyer">
+            </p>
+
+           
            
         </form>
     </div>
+    <script src="javas.js"></script>
 </body>
 </html>
