@@ -1,0 +1,35 @@
+.contain_form{
+    margin: auto;
+}
+
+
+.myform{
+   display: flex;
+   margin-top: 100px;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+
+label{
+
+    display: inline-block ;
+    width: 300px;
+    text-align: right;
+    
+}
+
+input{
+    height: 20px;
+    margin-left: 100px;
+    width: 200px;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:hover{
+    border-color: rgb(6, 6, 218);
+    box-shadow: 0px 0px 8px rgb(6, 6, 218);
+}
+
