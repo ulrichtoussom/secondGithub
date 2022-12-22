@@ -56,10 +56,24 @@ global.password = function(){
 
 } ;
 
+var inputs = document.querySelectorAll('input') ;
+alert(inputs.length)
+var c = inputs.length ;
+
+for (var i = 0; i<c ; i++) {
+   if(inputs[i].type=='text' || inputs[i].type=='password'){
+        alert(i) ;
+       inputs[i].onkeyup = function(){
+            global[this.id]() ;
+       }
+   }    
+}
+
 desactivespan() ;
+/*
 form.onsubmit= function(e){
     e.preventDefault() ;
     global.lastname() ;
     global.firstname() ;
     global.password() ;
-}
+}*/
